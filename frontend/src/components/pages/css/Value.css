@@ -1,0 +1,14 @@
+.bg-images {
+    background-image: url('../../images/backg.png');
+    min-height: 600px;
+    /* width:102%; */
+    margin:0;
+}
+
+.card-header.z-depth-1.mb-1{
+    background-color: #e8c060;
+}
+
+
+
+
