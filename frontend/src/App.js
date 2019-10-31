@@ -5,14 +5,20 @@ import "mdbreact/dist/css/mdb.css";
 import navbar from './components/layouts/navbar'
 import Footer from './components/layouts/Footer'
 import Home from './components/pages/Home'
+import SignIn from './components/auth/SignIn'
+import SignUp from './components/auth/SignUp'
+
+
 import { BrowserRouter, Switch,Route } from 'react-router-dom'
 
 
 function App() {
   return (
-    <div> 
+    <div>
         <BrowserRouter>
               <Route  component={navbar} />
+              <Route path='/signin' component={SignIn}/>
+              <Route path='/signup' component={SignUp}/>
             <Switch>
               <div className='app-content'>
                   <Route exact path='/' component={Home}/>

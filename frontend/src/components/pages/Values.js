@@ -6,8 +6,8 @@ const Values = () => {
     return (
         <div className='row bg-images' >
             <h2 className=" col-12 h1-responsive font-weight-bold text-center pt-4">
-              Our Values 
-         <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />          
+              Our Values
+         <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />
       </h2>
             <div className='col-lg-4 col-md-6 pt-0 pl-5 mt-0' >
                 <img src={hut} style={{marginTop: 40}} alt=''/>
@@ -196,7 +196,6 @@ const Values = () => {
                 </div>
                 </div>
             </div>
-            
         </div>
      </div>
     </div>

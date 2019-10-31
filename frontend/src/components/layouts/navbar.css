@@ -5,3 +5,15 @@
 .three_dots{
     font-size: 50;
 }
+
+.dropdown-default{
+    padding: 6px;
+}
+
+
+.dropdown-item.dd-link:hover{
+    color: white;
+    background-color: #1C2331;
+    margin-right: 40px;
+    box-shadow: 2px 5px 3px #1C2331 ;
+}

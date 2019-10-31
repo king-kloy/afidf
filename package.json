@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/king-kloy/afidf#readme",
   "dependencies": {
-    "concurrently": "^5.0.0"
+    "concurrently": "^5.0.0",
+    "react-scroll": "^1.7.14"
   }
 }

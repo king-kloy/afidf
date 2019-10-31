@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import {Link } from 'react-scroll';
 import './navbar.css';
-class NavbarPage extends Component {
+class Navbar extends Component {
 state = {
   isOpen: false
 };
@@ -16,6 +16,7 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
+      {this.prop}
       <MDBNavbar color="unique-color-dark" scrolling transparent className="myNavbar" dark expand="md"  fixed="top">
         <MDBNavbarBrand className='ml-5'>
           <strong className="white-text font-weight-bold">AFIDF</strong>
@@ -24,13 +25,17 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right  id ="hello">
             <MDBNavItem >
-              <MDBNavLink to="#!" >Vision</MDBNavLink>
+              <Link to="mission" spy={true} smooth={true} offset={-70} duration= {500}>
+                <MDBNavLink to="/vision" >Mission</MDBNavLink>
+              </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Mission</MDBNavLink>
+              <Link to="vision" spy={true} smooth={true} offset={-70} duration= {500}>
+                <MDBNavLink to="/mission" >Vision</MDBNavLink>
+              </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Documentaries</MDBNavLink>
+              <MDBNavLink to="#!" >Documentaries</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
                <MDBNavLink to="">Awards</MDBNavLink>
@@ -44,7 +49,7 @@ render() {
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="google-plus-g" />
+                <MDBIcon fab icon="instagram" />
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
@@ -53,10 +58,9 @@ render() {
                   <MDBIcon icon="user" />
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!" className='dd-link'>Focal points</MDBDropdownItem>
+                  <MDBDropdownItem href="#!" className='dd-link'>Register</MDBDropdownItem>
+                  <MDBDropdownItem href="#!" className='dd-link'>Sign in</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
@@ -64,10 +68,8 @@ render() {
         </MDBCollapse>
       </MDBNavbar>
     </Router>
-
-   
     );
   }
 }
 
-export default NavbarPage;
+export default Navbar;

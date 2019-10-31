@@ -9,7 +9,7 @@ const ContactUs = () => {
           <form>
             <h2 className="h1-responsive text-center mb-4 font-weight-bold">
               Contact Us
-              <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />          
+              <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />
             </h2>
             <label htmlFor="defaultFormContactNameEx" className="grey-text">
               Your name
