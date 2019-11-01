@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f0108ee.chunk.css",
-    "main.js": "/static/js/main.da445ae3.chunk.js",
-    "main.js.map": "/static/js/main.da445ae3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.88fc0d42.js",
-    "runtime-main.js.map": "/static/js/runtime-main.88fc0d42.js.map",
-    "static/css/2.3dcfd4a2.chunk.css": "/static/css/2.3dcfd4a2.chunk.css",
-    "static/js/2.d066b9c9.chunk.js": "/static/js/2.d066b9c9.chunk.js",
-    "static/js/2.d066b9c9.chunk.js.map": "/static/js/2.d066b9c9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.4e82de30254b4a8598276c2aea71876c.js": "/precache-manifest.4e82de30254b4a8598276c2aea71876c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.3dcfd4a2.chunk.css.map": "/static/css/2.3dcfd4a2.chunk.css.map",
-    "static/css/main.6f0108ee.chunk.css.map": "/static/css/main.6f0108ee.chunk.css.map",
-    "static/media/mdb.css": "/static/media/arrow_right.8ef6a08c.svg",
-    "static/media/africa.jpg": "/static/media/africa.d5567d56.jpg",
-    "static/media/Value.css": "/static/media/backg.54501a2d.png",
-    "static/media/all.min.css": "/static/media/fa-solid-900.c2801fb4.svg",
-    "static/media/hut.svg": "/static/media/hut.b3ad74dd.svg"
+    "main.css": "/afidf/static/css/main.fd647f7d.chunk.css",
+    "main.js": "/afidf/static/js/main.dcab6d10.chunk.js",
+    "main.js.map": "/afidf/static/js/main.dcab6d10.chunk.js.map",
+    "runtime-main.js": "/afidf/static/js/runtime-main.7155c767.js",
+    "runtime-main.js.map": "/afidf/static/js/runtime-main.7155c767.js.map",
+    "static/css/2.ac13444c.chunk.css": "/afidf/static/css/2.ac13444c.chunk.css",
+    "static/js/2.d066b9c9.chunk.js": "/afidf/static/js/2.d066b9c9.chunk.js",
+    "static/js/2.d066b9c9.chunk.js.map": "/afidf/static/js/2.d066b9c9.chunk.js.map",
+    "index.html": "/afidf/index.html",
+    "precache-manifest.95abf5b30bb875f6cf0144a3a7e90ab8.js": "/afidf/precache-manifest.95abf5b30bb875f6cf0144a3a7e90ab8.js",
+    "service-worker.js": "/afidf/service-worker.js",
+    "static/css/2.ac13444c.chunk.css.map": "/afidf/static/css/2.ac13444c.chunk.css.map",
+    "static/css/main.fd647f7d.chunk.css.map": "/afidf/static/css/main.fd647f7d.chunk.css.map",
+    "static/media/mdb.css": "/afidf/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/africa.jpg": "/afidf/static/media/africa.d5567d56.jpg",
+    "static/media/Value.css": "/afidf/static/media/backg.54501a2d.png",
+    "static/media/all.min.css": "/afidf/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/hut.svg": "/afidf/static/media/hut.b3ad74dd.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88fc0d42.js",
-    "static/css/2.3dcfd4a2.chunk.css",
+    "static/js/runtime-main.7155c767.js",
+    "static/css/2.ac13444c.chunk.css",
     "static/js/2.d066b9c9.chunk.js",
-    "static/css/main.6f0108ee.chunk.css",
-    "static/js/main.da445ae3.chunk.js"
+    "static/css/main.fd647f7d.chunk.css",
+    "static/js/main.dcab6d10.chunk.js"
   ]
 }
