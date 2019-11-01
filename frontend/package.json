@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "mdbreact": "^4.21.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -18,6 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://king-kloy.github.io/afidf",
   "eslintConfig": {
     "extends": "react-app"
   },
