@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 // models
-const User = require("../models/User");
-const UserSession = require("../models/UserSession");
+const User = require("../models/User.model");
+const UserSession = require("../models/UserSession.model");
 
 // Sign up users
 router.post('/signup', (req, res, next) => {
@@ -105,7 +105,7 @@ router.post('/signin', (req, res, next) => {
     }
 
     // otherwise log user in and create session
-    new userSession = new UserSession();
+    let userSession = new UserSession();
     userSession.userId = user._id;
 
     userSession.save((err, doc) => {
