@@ -4,7 +4,7 @@
   "description": "project for African International Documentary Festival",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && yarn install && node server.js\" \"cd frontend && yarn install && yarn build\""
+    "start": "concurrently \"cd backend && node server.js\" \"cd frontend && npm start\""
   },
   "repository": {
     "type": "git",
