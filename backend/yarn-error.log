@@ -1,0 +1,45 @@
+Arguments: 
+  /home/kloy/.nvm/versions/node/v10.16.0/bin/node /usr/share/yarn/bin/yarn.js add bcrypt
+
+PATH: 
+  /home/kloy/.nvm/versions/node/v10.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/kloy/.fzf/bin:/home/kloy/.vimpkg/bin:/home/kloy/Downloads/flutter_linux_v1.2.1-stable/flutter/bin:/home/kloy/.config/composer/vendor/bin:/usr/lib/dart/bin:/usr/lib/jvm/java-8-openjdk-amd64:/home/kloy/Android/Sdk/tools:/home/kloy/Android/Sdk/emulator:/home/kloy/Android/Sdk/tools/bin:/home/kloy/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.1.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.7.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
