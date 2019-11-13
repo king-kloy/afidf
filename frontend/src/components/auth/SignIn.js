@@ -1,12 +1,13 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
+import  { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
-    <MDBContainer className='mt-5'>
+    <MDBContainer className='mt-5 d-flex flex-column justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
       <MDBRow>
-        <MDBCol md="6">
-          <MDBCard>
+        <MDBCol md="12" className='mt-5 d-flex justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
+          <MDBCard className='w-50'>
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
@@ -38,9 +39,10 @@ const SignIn = () => {
               <div className="text-center mb-3">
                 <MDBBtn
                   type="button"
-                  gradient="blue"
+                  gradient="sunny-morning"
                   rounded
                   className="btn-block z-depth-1a"
+                  style={{borderRadius: 30, color: '#fff',}}
                 >
                   Sign in
                 </MDBBtn>
@@ -72,17 +74,18 @@ const SignIn = () => {
                   rounded
                   className="z-depth-1a"
                 >
-                  <MDBIcon fab icon="google-plus-g" className="blue-text" />
+                  <MDBIcon fab icon="instagram" className="blue-text" />
                 </MDBBtn>
               </div>
             </MDBCardBody>
             <MDBModalFooter className="mx-5 pt-3 mb-1">
               <p className="font-small grey-text d-flex justify-content-end">
                 Not a member?
-                <a href="/signin" className="blue-text ml-1">
-
-                  Sign Up
-                </a>
+               <Link to='/signup'>
+                  <a href="/signin" className="blue-text ml-1">
+                    Sign Up
+                  </a>
+                </Link>
               </p>
             </MDBModalFooter>
           </MDBCard>

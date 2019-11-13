@@ -10,6 +10,7 @@ import SignUp from './components/auth/SignUp'
 
 
 import { BrowserRouter, Switch,Route } from 'react-router-dom'
+import Documentaries from './components/pages/Documentaries';
 
 
 function App() {
@@ -19,9 +20,11 @@ function App() {
               <Route  component={navbar} />
               <Route path='/signin' component={SignIn}/>
               <Route path='/signup' component={SignUp}/>
+              <Route  path='/documentaries' component={Documentaries}/>
             <Switch>
               <div className='app-content'>
                   <Route exact path='/' component={Home}/>
+                  
               </div>
             </Switch>
              <Route component={Footer}/>

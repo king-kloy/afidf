@@ -24,10 +24,10 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="8">
-            <h5 className="title font-weight-bold">Footer Content</h5>
+            <h5 className="title font-weight-bold">Africa International Documentary Festival</h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content.
+            AFIDF will set the standard and be the recognized leader in African Diapora documentary informaation management pratice,
+            education, certification, research, and advocacy.
             </p>
         <ul className="list-unstyled list-inline text-center float-left">
           <li className="list-inline-item">

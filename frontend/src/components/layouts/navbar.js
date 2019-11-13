@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import {Link } from 'react-scroll';
 import './navbar.css';
 class Navbar extends Component {
@@ -35,7 +35,9 @@ render() {
               </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!" >Documentaries</MDBNavLink>
+              <NavLink to='/documentaries'>
+                <MDBNavLink to='/documentaries' >Documentaries</MDBNavLink>
+              </NavLink>
             </MDBNavItem>
             <MDBNavItem>
                <MDBNavLink to="">Awards</MDBNavLink>
@@ -59,8 +61,8 @@ render() {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default">
                   <MDBDropdownItem href="#!" className='dd-link'>Focal points</MDBDropdownItem>
-                  <MDBDropdownItem href="#!" className='dd-link'>Register</MDBDropdownItem>
-                  <MDBDropdownItem href="#!" className='dd-link'>Sign in</MDBDropdownItem>
+                  <MDBDropdownItem href="/signup" className='dd-link'>Register</MDBDropdownItem>
+                  <MDBDropdownItem href="/signin" className='dd-link'>Sign in</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

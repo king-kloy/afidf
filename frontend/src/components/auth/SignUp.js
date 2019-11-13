@@ -3,30 +3,16 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, M
 
 const SignUp = () => {
   return (
-    <MDBContainer classNam='mt-5'>
+    <MDBContainer className='mt-5 d-flex flex-column justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
       <MDBRow>
-        <MDBCol md="6">
-          <MDBCard>
+        <MDBCol md="12" className='mt-5 d-flex justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
+          <MDBCard className='w-50'>
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
-                  <strong>Sign Up</strong>
+                  <strong>Sign up</strong>
                 </h3>
               </div>
-              <MDBInput
-                label='Your First Name'
-                group
-                type='text'
-                validate
-                containerClass='mb-0'
-              />
-              <MDBInput
-                label='Your Last Name'
-                group
-                type='text'
-                validate
-                containerClass='mb-0'
-              />
               <MDBInput
                 label="Your email"
                 group
@@ -36,23 +22,36 @@ const SignUp = () => {
                 success="right"
               />
               <MDBInput
-                label="Your password"
+                label="Create Password"
                 group
                 type="password"
                 validate
                 containerClass="mb-0"
               />
+               <MDBInput
+                label="Comfirm Password"
+                group
+                type="password"
+                validate
+                containerClass="mb-0"
+              />
+              
               <div className="text-center mb-3">
                 <MDBBtn
                   type="button"
-                  gradient="blue"
+                  gradient="sunny-morning"
                   rounded
                   className="btn-block z-depth-1a"
+                  style={{borderRadius: 30, color: '#fff',}}
                 >
                   Sign Up
                 </MDBBtn>
               </div>
+              
             </MDBCardBody>
+            <MDBModalFooter className="mx-5 pt-3 mb-1">
+          
+            </MDBModalFooter>
           </MDBCard>
         </MDBCol>
       </MDBRow>
