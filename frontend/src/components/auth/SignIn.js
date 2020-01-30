@@ -4,10 +4,10 @@ import  { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
-    <MDBContainer className='mt-5 d-flex flex-column justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
-      <MDBRow>
-        <MDBCol md="12" className='mt-5 d-flex justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
-          <MDBCard className='w-50'>
+    <MDBContainer fluid className=' d-flex flex-column justify-content-center' >
+      <MDBRow className>
+        <MDBCol md="12"  className='pt-0 d-flex justify-content-center' >
+          <MDBCard className=' mt-3' style={{width: 500}}>
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
@@ -37,15 +37,18 @@ const SignIn = () => {
                 </a>
               </p>
               <div className="text-center mb-3">
-                <MDBBtn
-                  type="button"
-                  gradient="sunny-morning"
-                  rounded
-                  className="btn-block z-depth-1a"
-                  style={{borderRadius: 30, color: '#fff',}}
-                >
-                  Sign in
-                </MDBBtn>
+
+                <Link to='/dashboard'>
+                  <MDBBtn
+                    type="button"
+                    gradient="sunny-morning"
+                    rounded
+                    className="btn-block z-depth-1a"
+                    style={{borderRadius: 30, color: '#fff',}}
+                  >
+                    Sign in
+                  </MDBBtn>
+                </Link>
               </div>
               <p className="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
 
@@ -74,7 +77,7 @@ const SignIn = () => {
                   rounded
                   className="z-depth-1a"
                 >
-                  <MDBIcon fab icon="instagram" className="blue-text" />
+                  <MDBIcon fab icon="google" className="blue-text" />
                 </MDBBtn>
               </div>
             </MDBCardBody>

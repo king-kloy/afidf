@@ -16,7 +16,7 @@ class Mission extends React.Component{
              <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />
           </h2>
           <MDBRow className='px-5 mx-0'>
-            <MDBCol lg="6" md="6" lassName="justifyy">
+            <MDBCol lg="6" md="6" >
               <MDBView className=" mb-lg-0" hover waves className='d-flex justify-content-center'>
                 <img
                   className="img-fluid z-depth-1 rounded"
@@ -28,7 +28,7 @@ class Mission extends React.Component{
                 </a>
               </MDBView>
             </MDBCol>
-            <MDBCol lg="6" md="6" className="justifyy pt-5">
+            <MDBCol lg="6" md="6" className=" pt-5">
               <p className='lead'>
                 African Internatiional Documentary Festival(AFIDF) presents an independent and inspiring
                 meeting place and audiences and professionals to se a diverse and high-quality African

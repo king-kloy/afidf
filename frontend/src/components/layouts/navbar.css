@@ -1,5 +1,5 @@
 #hello>*{
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .three_dots{
@@ -9,6 +9,13 @@
 .dropdown-default{
     padding: 6px;
 }
+
+.navbar-brand{
+    position: flex;
+    height: 20px;
+    width: 40px;
+}
+
 
 
 .dropdown-item.dd-link:hover{

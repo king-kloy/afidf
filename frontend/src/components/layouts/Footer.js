@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
         <ul className="list-unstyled list-inline text-center float-left">
           <li className="list-inline-item">
-            <a className="btn-floating btn-fb mx-1">
+            <a className="btn-floating btn-fb mx-1" >
               <i className="fab fa-facebook-f"> </i>
             </a>
           </li>
@@ -50,16 +50,11 @@ const Footer = () => {
               <i className="fab fa-linkedin-in"> </i>
             </a>
           </li>
-          <li className="list-inline-item">
-            <a className="btn-floating btn-dribbble mx-1">
-              <i className="fab fa-dribbble"> </i>
-            </a>
-          </li>
         </ul>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3" style={{backgroundColor: '#101818'}}>
+      <div className="footer-copyright text-center py-3" style={{backgroundColor: '#1C2331'}}>
         <MDBContainer color='unique-color-dark' fluid>
           &copy; {new Date().getFullYear()} Copyright: Benefo & Kyei
         </MDBContainer>

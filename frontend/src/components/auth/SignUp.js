@@ -1,12 +1,13 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
+import  { Link } from 'react-router-dom'
 
 const SignUp = () => {
   return (
-    <MDBContainer className='mt-5 d-flex flex-column justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
+    <MDBContainer fluid className='d-flex flex-column justify-content-center' >
       <MDBRow>
-        <MDBCol md="12" className='mt-5 d-flex justify-content-center' style={{border: 3, borderColor:  '#f00',}}>
-          <MDBCard className='w-50'>
+        <MDBCol md="12" className='mt-3 d-flex justify-content-center'>
+          <MDBCard className='' style={{width: 500}}>
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
@@ -37,15 +38,17 @@ const SignUp = () => {
               />
               
               <div className="text-center mb-3">
-                <MDBBtn
-                  type="button"
-                  gradient="sunny-morning"
-                  rounded
-                  className="btn-block z-depth-1a"
-                  style={{borderRadius: 30, color: '#fff',}}
-                >
-                  Sign Up
-                </MDBBtn>
+                <Link to='/dashboard'>
+                  <MDBBtn
+                    type="button"
+                    gradient="sunny-morning"
+                    rounded
+                    className="btn-block z-depth-1a"
+                    style={{borderRadius: 30, color: '#fff',}}
+                  >
+                    Sign Up
+                  </MDBBtn>
+                </Link>
               </div>
               
             </MDBCardBody>

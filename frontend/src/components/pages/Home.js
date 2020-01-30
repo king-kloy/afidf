@@ -16,7 +16,6 @@ class Home extends Component {
   render() {
     return (
         <div className='homePage'>
-            {/* <div className="showcase" class="show" ></div> */}
             {/* Carousel Begins */}
             <MDBContainer  fluid style={{padding: 0,}}>
                 <MDBCarousel
@@ -24,7 +23,8 @@ class Home extends Component {
                 length={3}
                 showControls={true}
                 showIndicators={true}
-                className="z-depth-1"
+                className="z-depth-0"
+                style={{marginTop: 0,paddingTop: 0,}}
               >
           <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
@@ -36,10 +36,6 @@ class Home extends Component {
               />
            <MDBMask overlay="black-light" />
           </MDBView>
-          {/* <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
-          </MDBCarouselCaption> */}
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
           <MDBView>
@@ -50,10 +46,6 @@ class Home extends Component {
             />
           <MDBMask overlay="black-light" />
           </MDBView>
-          {/* <MDBCarouselCaption>
-            <h3 className="h3-responsive">Strong mask</h3>
-            <p>Second text</p>
-          </MDBCarouselCaption> */}
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
             <MDBView>
@@ -64,28 +56,22 @@ class Home extends Component {
             />
           <MDBMask overlay="black-light" />
           </MDBView>
-          {/* <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
-          </MDBCarouselCaption> */}
         </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
 
-        {/* Values Section Starts */}
-        <Values />
+         {/* Values Section Starts */}
+           <Values />
 
-        {/* Mission Section Starts*/}
-          <Mission />
+         {/* Mission Section Starts*/}
+           <Mission />
 
-        {/* Vision Section  */}
-         <Vision />
-
-        {/* Documentaries Section */}
+         {/* Vision Section  */}
+            <Vision />
 
          {/* Contact Us Section */}
-         <ContactUs />
+           <ContactUs />
         </div>
      )
   }
