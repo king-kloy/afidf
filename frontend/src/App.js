@@ -14,8 +14,6 @@ import posts from './components/pages/cms/posts'
 import Edit from './components/pages/cms/Edit'
 import Post from './components/pages/blogs/Post'
 import BlogDetails from './components/pages/blogs/BlogDetails'
-
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Documentaries from './components/pages/Documentaries';
 

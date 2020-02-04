@@ -1,14 +1,9 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { firestoreConnect } from 'react-redux-firebase'
-import { compose } from 'redux'
-import { Redirect } from 'react-router-dom'
 import moment from 'moment'
+import { useStore } from 'easy-peasy'
 
 const BlogDetails = (props) => {
-    const { post, auth } = props;
-    if (!auth.uid) return <Redirect to='/signin' />
-    if(post){
+    const post = useStore(state => state.posts);
         return(
             <div className="Details">
                 <div className="container">
@@ -29,31 +24,6 @@ const BlogDetails = (props) => {
               </div>
             </div>
         )
-    }
-    else{
-        return (
-            <div className="container text-center">
-                <p> Loading post....</p>
-            </div>
-        )
-    }
-   
 }
 
-const mapStateToProps = (state, ownProps) => {
-    // console.log(state);
-    const id = ownProps.match.params.id;
-    const posts = state.firestore.data.posts;
-    const post = posts ? posts[id] : null
-    return {
-      post: post,
-      auth: state.firebase.auth
-    }
-  }
-
-  export default compose(
-    connect(mapStateToProps),
-    firestoreConnect([{
-      collection: 'posts'
-    }])
-  )(BlogDetails) 
+  export default BlogDetails

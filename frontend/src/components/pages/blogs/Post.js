@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import BlogList from './BlogList'
-import { connect } from 'react-redux'
-import { firestoreConnect } from 'react-redux-firebase'
-import { compose } from 'redux'
-import { Redirect } from 'react-router-dom'
+
 
 class Post extends Component { 
     render(){
@@ -25,15 +22,4 @@ class Post extends Component {
     } 
 }
 
-const mapStateToProps = (state) => {
-    return {
-        posts: state.firestore.ordered.posts,
-    }
-}
-
-export default compose(
-    connect(mapStateToProps),
-    firestoreConnect([
-        {collection: 'posts'}
-    ])
-)(Post);
+export default Post;

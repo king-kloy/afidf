@@ -1,10 +1,12 @@
 import React from 'react'
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import { Link } from 'react-router-dom'
+import { useStore } from 'easy-peasy'
 import moment from 'moment'
 import Smiling_Ladies from '../../images/Smiling_Ladies.png'
 
-const BlogSummary = ({post}) => {
+const BlogSummary = () => {
+  const post = Array.from(useStore(state => state.posts));
     return (
         <div className="">
             <MDBCard className="my-5 px-5 pb-5">
@@ -41,7 +43,7 @@ const BlogSummary = ({post}) => {
               <a href="#!">
                 <strong>{post.authorFirstName} {post.authorLastName} </strong>
               </a>
-              , {moment(post.createdAt.toDate()).calendar()}
+              , {post.createdAt}
             </p>
             <Link to='/BlogDetails'>
                 <MDBBtn color="success" size="md" className="waves-light ">

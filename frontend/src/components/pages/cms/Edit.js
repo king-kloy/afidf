@@ -4,11 +4,13 @@ import './css/style.css'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import ReactHtmlParser from 'react-html-parser';
+import { useStore} from 'easy-peasy' 
 
 
 function Edit (){
-        const [value, setValue] = useState()
+        const post = useStore(state => state.posts);
 
+        const [value, setValue] = useState()
         const handleonChange = (e,editor)=>{
             const data = editor.getData();
             setValue(data)
@@ -66,11 +68,11 @@ function Edit (){
               <div className="card-body">
                 <form>
                   <div className="form-group">
-                    <label>Page Title</label>
+                    <label>{post.title}</label>
                     <input type="text" className="form-control" placeholder="Page Title" value="About"/>
                   </div>
                   <div className="form-group">
-                    <label>Page Body</label>
+                    <label>{post.content}</label>
                     <CKEditor
                     editor={ ClassicEditor }
                     onChange={handleonChange}

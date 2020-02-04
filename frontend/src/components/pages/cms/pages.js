@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MDBDropdownItem,MDBDropdown,MDBDropdownToggle,MDBDropdownMenu} from 'mdbreact' 
 import './css/style.css'  
 
-class pages extends Component {
-    render() {
-        return (
-            <div className='pages'>
+function pages() {
+              return (
+                <div className='pages'>
                 <header id='header'>
                 <div className="container">
                     <div className="row">
@@ -74,25 +73,25 @@ class pages extends Component {
                         <td>Home</td>
                         <td><span className="fas fa-ok" aria-hidden="true"></span></td>
                         <td>Dec 12, 2016</td>
-                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="#" style={{borderRadius: 20}}>Delete</a></td>
+                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="/" style={{borderRadius: 20}} >Delete</a></td>
                       </tr>
                       <tr>
                         <td>About</td>
                         <td><span className="fas fa-ok" aria-hidden="true"></span></td>
                         <td>Dec 13, 2016</td>
-                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="#" style={{borderRadius: 20}}>Delete</a></td>
+                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="/" style={{borderRadius: 20}}>Delete</a></td>
                       </tr>
                       <tr>
                         <td>Services</td>
                         <td><span className="fas fa-remove" aria-hidden="true"></span></td>
                         <td>Dec 13, 2016</td>
-                        <td><a className="btn btn-light " href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="#" style={{borderRadius: 20}}>Delete</a></td>
+                        <td><a className="btn btn-light " href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="/" style={{borderRadius: 20}}>Delete</a></td>
                       </tr>
                       <tr>
                         <td>Contact</td> 
                         <td><span className="fas fa-ok" aria-hidden="true"></span></td>
                         <td>Dec 14, 2016</td>
-                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="#" style={{borderRadius: 20}}>Delete</a></td>
+                        <td><a className="btn btn-light" href="/edit" style={{borderRadius: 20}}>Edit</a> <a className="btn btn-danger" href="/" style={{borderRadius: 20}} >Delete</a></td>
                       </tr>
                     </table>
               </div>
@@ -103,8 +102,7 @@ class pages extends Component {
       </div>
     </section>
             </div>
-        );
-    }
-}
+              )
+            } 
 
 export default pages;
