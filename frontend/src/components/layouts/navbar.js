@@ -1,73 +1,54 @@
-import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
-import './navbar.css';
-class NavbarPage extends Component {
-state = {
-  isOpen: false
-};
+import React, { Component } from 'react';
+import './navbar.css'
+import AFID_logoF from '../images/AFID_logoF.png'
+class navbar extends Component {
+    state = {  }
+    render() { 
+        return (  
+                <nav className=" sticky-top    navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#1C2331', }}>
+                <a className="navbar-brand pt-0 mt-0" href="/">
+                    <img src={AFID_logoF} style={{height: 30, width: 30, marginTop: 0, paddingTop: 0}}/>
+                </a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
+                    <ul className="navbar-nav ml-auto"  id ="hello">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/">Home
+                        <span className="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/documentaries">Documentaries</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/gallery">Gallery</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/blog">Blog</a>
+                    </li>
+                    </ul>
+                    <ul className="navbar-nav ml-auto nav-flex-icons" style={{marginRight: 100,}}>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i className="fas fa-user"></i>
+                        </a>
+                        <div className="dropdown-menu dropdown-menu-right dropdown-default"
+                        aria-labelledby="navbarDropdownMenuLink-333">
+                        <a className="dropdown-item" href="/">Action</a>
+                        <a className="dropdown-item" href="/">Another action</a>
+                        <a className="dropdown-item" href="/">Something else here</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
 
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
+        );
+    }
 }
-
-render() {
-  return (
-    <Router>
-      <MDBNavbar color="unique-color-dark" scrolling transparent className="myNavbar" dark expand="md"  fixed="top">
-        <MDBNavbarBrand className='ml-5'>
-          <strong className="white-text font-weight-bold">AFIDF</strong>
-        </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav right  id ="hello">
-            <MDBNavItem >
-              <MDBNavLink to="#!" >Vision</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Mission</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Documentaries</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-               <MDBNavLink to="">Awards</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
-          <MDBNavbarNav right style={{marginRight: 100,}}>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="twitter" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="google-plus-g" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="user" />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavItem>
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBNavbar>
-    </Router>
-
-   
-    );
-  }
-}
-
-export default NavbarPage;
+ 
+export default navbar;

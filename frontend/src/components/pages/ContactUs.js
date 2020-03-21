@@ -1,16 +1,16 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
-const ContactUs = () => {
+const ContactUS = () => {
   return (
-    <MDBContainer >
-      <MDBRow className='my-5 d-flex justify-content-center'>
-        <MDBCol md="6">
+    <MDBContainer fluid>
+      <MDBRow className='justify-content-center'>
+        <MDBCol md="12" lg="6">
           <form>
-            <h2 className="h1-responsive text-center mb-4 font-weight-bold">
-              Contact Us
-              <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />          
-            </h2>
+          <h2 className="h1-responsive font-weight-bold text-center my-5">
+            Our Mission
+             <hr style={{height: 5, width: 40, backgroundColor: '#000'}} />
+          </h2>
             <label htmlFor="defaultFormContactNameEx" className="grey-text">
               Your name
             </label>
@@ -66,4 +66,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUS;

@@ -5,15 +5,17 @@ import Mission from './Mission'
 import Vision from './Vision'
 import Values from './Values'
 import ContactUs from './ContactUs'
+import Drummers from  '../images/Drummers.png'
+import Smiling_Ladies from '../images/Smiling_Ladies.png'
+import CameraCrew from '../images/CameraCrew.png'
 
 class Home extends Component {
-  state = { 
+  state = {
 
    }
-  render() { 
-    return (   
+  render() {
+    return (
         <div className='homePage'>
-            {/* <div className="showcase" class="show" ></div> */}
             {/* Carousel Begins */}
             <MDBContainer  fluid style={{padding: 0,}}>
                 <MDBCarousel
@@ -21,75 +23,57 @@ class Home extends Component {
                 length={3}
                 showControls={true}
                 showIndicators={true}
-                className="z-depth-1"
+                className="z-depth-0"
+                style={{marginTop: 0,paddingTop: 0,}}
               >
           <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img
                 className="d-block w-100 fullview"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                src={Drummers}
                 alt="First slide"
               />
            <MDBMask overlay="black-light" />
           </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
-          </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
           <MDBView>
             <img
               className="d-block w-100 fullview"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src={Smiling_Ladies}
               alt="Second slide"
             />
-          <MDBMask overlay="black-strong" />
+          <MDBMask overlay="black-light" />
           </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Strong mask</h3>
-            <p>Second text</p>
-          </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
             <MDBView>
             <img
               className="d-block w-100 fullview"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              src={CameraCrew}
               alt="Third slide"
             />
-          <MDBMask overlay="black-slight" />
+          <MDBMask overlay="black-light" />
           </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
-          </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
 
-       <Values />
-       
-        {/* Mission Section Starts*/}
-          <Mission />
+         {/* Values Section Starts */}
+           <Values />
 
-        {/* Vision Section  */}
-         <Vision />
+         {/* Mission Section Starts*/}
+           <Mission />
 
-         {/* Documentaries Section */}
+         {/* Vision Section  */}
+            <Vision />
 
          {/* Contact Us Section */}
-         <ContactUs />
-           
+           <ContactUs />
         </div>
-
-      
-       
-  
      )
   }
 }
- 
 export default Home;
