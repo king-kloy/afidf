@@ -1,0 +1,23 @@
+.img,
+.main {
+  max-height: 800px;
+}
+.categories {
+  background-image: url("../../images/Trophy_Man.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+
+  z-index: -10;
+}
+.shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}

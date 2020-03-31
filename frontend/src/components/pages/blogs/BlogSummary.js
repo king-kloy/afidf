@@ -11,8 +11,6 @@ import {
   MDBBtn
 } from "mdbreact";
 import { Link } from "react-router-dom";
-import { useStore } from "easy-peasy";
-import moment from "moment";
 import Smiling_Ladies from "../../images/Smiling_Ladies.png";
 import ReactHtmlParser from "react-html-parser";
 

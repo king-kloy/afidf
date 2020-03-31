@@ -17,6 +17,7 @@ import BlogList from "./components/pages/blogs/BlogList";
 import BlogDetails from "./components/pages/blogs/BlogDetails";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Documentaries from "./components/pages/Documentaries";
+import Awards from "./components/pages/documentaries/award";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
         <Route path="/gallery" component={gallery} />
+        <Route path="/awards" component={Awards} />
         <Route path="/blog" component={BlogList} />
         <Route path="/post/:id" component={BlogDetails} />
         <Route path="/dashboard" component={dashboard} />
