@@ -1,0 +1,43 @@
+*,
+::after,
+::before {
+  box-sizing: 0;
+}
+.focus {
+  background-image: url("../../images/CameraWoman_Grayscale.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  z-index: -10;
+}
+
+.focal-points {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.special {
+  color: #e8c060 !important;
+  font-family: cursive;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "writer-autograph-bold";
+  src: url("./FontsFree-Net-Writer-Autograph.ttf");
+}

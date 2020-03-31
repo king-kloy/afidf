@@ -1,0 +1,39 @@
+#hello > * {
+  margin-right: 40px;
+}
+
+.three_dots {
+  font-size: 50;
+}
+
+.dropdown-default {
+  padding: 6px;
+}
+
+.navbar-brand {
+  position: flex;
+  height: 20px;
+  width: 40px;
+}
+
+.dropdown-item.dd-link:hover {
+  color: #fff !important;
+  font-weight: bold;
+  background-color: #1c2331;
+  margin-right: 40px;
+  box-shadow: 2px 5px 3px #1c2331;
+}
+
+.links-active {
+  color: #1c2331 !important;
+  background-color: white !important;
+  border-radius: 3px !important;
+  font-weight: bold;
+}
+
+.links-active:hover {
+  color: #1c2331 !important;
+  background-color: white !important;
+  border-radius: 3px !important;
+  font-weight: bold;
+}
