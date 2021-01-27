@@ -6,7 +6,7 @@ const __dirname = path.resolve(path.dirname(""));
 
 const storeUpload = async ({ stream, filename, mimetype }) => {
   const id = shortid.generate();
-  const filePath = `${__dirname}/upload_images/${id}-${filename}`;
+  const filePath = `${__dirname}/uploads/${id}-${filename}`;
   return new Promise((resolve, reject) =>
     stream
       .pipe(createWriteStream(filePath))
