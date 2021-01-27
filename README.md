@@ -12,12 +12,14 @@
  npm install
 
  # to start the client
+ cd client
  npm install
  npm start
 
- # to start back-end
- npm install
- npm start
+ # to start backend
+ cd backend
+ yarn
+ yarn start
 
  # to both concurrently at the root
  npm start
