@@ -2,10 +2,11 @@
   "name": "afidf",
   "version": "1.0.0",
   "description": "project for African International Documentary Festival",
-  "main": "index.js",
   "scripts": {
     "start": "cd backend && node server.js",
-    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
+    "predeploy": "cd frontend && npm run build",
+    "deploy": "cd frontend && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,9 @@
   "bugs": {
     "url": "https://github.com/king-kloy/afidf/issues"
   },
-  "homepage": "https://github.com/king-kloy/afidf#readme",
+  "react-dom": "^16.11.0",
   "dependencies": {
     "concurrently": "^5.0.0",
-    "react-scroll": "^1.7.14"
+    "gh-pages": "^2.1.1"
   }
 }
