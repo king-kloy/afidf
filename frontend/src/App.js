@@ -10,14 +10,15 @@ import SignUp from "./components/auth/SignUp";
 import dashboard from "./components/pages/cms/dashboard";
 import gallery from "./components/pages/gallery";
 import pages from "./components/pages/cms/pages";
-import posts from "./components/pages/cms/posts";
+import Posts from "./components/pages/cms/posts";
 import Edit from "./components/pages/cms/Edit";
 import create from "./components/pages/cms/Create";
-import BlogList from "./components/pages/blogs/BlogList";
 import BlogDetails from "./components/pages/blogs/BlogDetails";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Documentaries from "./components/pages/Documentaries";
 import Awards from "./components/pages/documentaries/award";
+import Submission from "./components/pages/documentaries/submission";
+import Post from "./components/pages/blogs/Post";
 
 function App() {
   return (
@@ -30,13 +31,14 @@ function App() {
         <Route exact path="/signup" component={SignUp} />
         <Route path="/gallery" component={gallery} />
         <Route path="/awards" component={Awards} />
-        <Route path="/blog" component={BlogList} />
+        <Route path="/submission" component={Submission} />
+        <Route path="/blog" component={Post} />
         <Route path="/post/:id" component={BlogDetails} />
         <Route path="/dashboard" component={dashboard} />
         <Route path="/pages" component={pages} />
-        <Route path="/posts" component={posts} />
+        <Route path="/posts" component={Posts} />
         <Route path="/create" component={create} />
-        <Route path="/edit" component={Edit} />
+        <Route path="/edit/:id" component={Edit} />
       </Switch>
       <Route component={Footer} />
     </BrowserRouter>

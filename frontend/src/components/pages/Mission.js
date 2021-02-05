@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
 import { MDBRow, MDBCol, MDBMask, MDBView } from "mdbreact";
 import Eagle from "../images/Eagle.png";

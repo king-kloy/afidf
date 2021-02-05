@@ -1,27 +1,36 @@
 import React from "react";
-import moment from "moment";
-import { useStore } from "easy-peasy";
+import { useParams } from "react-router-dom";
+import Smiling_Ladies from "../../images/Smiling_Ladies.png";
+import useFetch from "../cms/useFetch";
+import ReactHtmlParser from "react-html-parser";
+import Sidebar from "./Sidebar";
 
-const BlogDetails = props => {
-  const post = useStore(state => state.posts);
+const BlogDetails = (props) => {
+  const { id } = useParams();
+  const { posts, isLoading, error } = useFetch(
+    "http://localhost:8000/posts/" + id
+  );
+
   return (
     <div className="Details">
-      <div className="container">
-        <div className="col-md-8">
-          <div className="card card-default">
-            <div className="card-heading">
-              <h5 className="card-title">{post.title}</h5>
-            </div>
-            <div className="card-body">
-              <p>{post.content}</p>
-              <div className="text-grey">
-                <div>
-                  Posted by {post.authorFirstName} {post.authorLastName}
-                </div>
-                <p className="text-grey">{post.createdAt}</p>
+      <div className="container mb-3">
+        <div class="row">
+          <div className="col-md-8 my-3">
+            {isLoading && <div>Loading...</div>}
+            {error && <div> {error}</div>}
+            {posts && (
+              <div>
+                <img
+                  src={Smiling_Ladies}
+                  className="img-fluid"
+                  alt={posts.title + "'s image"}
+                />
+                <h4 className="font-weight-bold">{posts.title}</h4>
+                <p className="lead">{ReactHtmlParser(posts.content)}</p>
               </div>
-            </div>
+            )}
           </div>
+          <Sidebar />
         </div>
       </div>
     </div>

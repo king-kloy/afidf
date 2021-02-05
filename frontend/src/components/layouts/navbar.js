@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import "./navbar.css";
 import AFID_logoF from "../images/AFID_logoF.png";
@@ -39,32 +40,32 @@ class navbar extends Component {
                 to="/"
                 activeClassName="links-active"
                 className="nav-link"
-                n
               >
                 Home
               </NavLink>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                href=""
               >
                 Documentation
               </a>
               <div
-                class="dropdown-menu dropdown-primary dropdown-default"
+                className="dropdown-menu dropdown-primary dropdown-default"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item dd-link" href="/documentaries">
+                <a className="dropdown-item dd-link" href="/documentaries">
                   Main
                 </a>
-                <a class="dropdown-item dd-link" href="/awards">
+                <a className="dropdown-item dd-link" href="/awards">
                   Awards
                 </a>
-                <a class="dropdown-item dd-link" href="/">
+                <a className="dropdown-item dd-link" href="/submission">
                   Submission
                 </a>
               </div>

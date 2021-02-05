@@ -31,10 +31,17 @@
   height: 70px;
 }
 
-.special {
+.special,
+.submit {
   color: #e8c060 !important;
   font-family: cursive;
   font-weight: lighter;
+}
+
+.submission {
+  /* background-image: url("../../images/bg.jpg");
+  background-size: cover;
+  position: relative; */
 }
 
 @font-face {

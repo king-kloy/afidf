@@ -1,45 +1,48 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const Footer = () => {
   return (
     <MDBFooter
-      className="font-small pt-3 mt-4"
+      className="font-small pt-3"
       style={{ backgroundColor: "#b6974e" }}
     >
-      <MDBContainer fluid className="text-center text-md-left">
+      <MDBContainer fluid>
         <MDBRow className="p-5">
           <MDBCol md="4">
-            <MDBRow className="d-flex justify-content-center">
-              <h5 className="font-weight-bold" style={{ width: 40 }}>
-                Links
-              </h5>
-              <hr style={{ height: 2, width: 40, backgroundColor: "#fff" }} />
-            </MDBRow>
-            <MDBRow className="d-flex justify-content-center">
-              <ul>
-                <li className="list-unstyled">
-                  <a href="/">Home</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="/gallery">Gallery</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="/documentaries">Documentaries</a>
-                </li>
-                <li className="list-unstyled">
-                  <a href="/blog">Blog</a>
-                </li>
-              </ul>
-            </MDBRow>
+            <h5 className="font-weight-bold text-center pl-5">
+              Links
+              <hr
+                style={{
+                  height: 2,
+                  width: 40,
+                  backgroundColor: "#fff",
+                }}
+              />
+            </h5>
+            <ul className="text-center">
+              <li className="list-unstyled">
+                <a href="/">Home</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="/gallery">Gallery</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="/documentaries">Documentaries</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="/blog">Blog</a>
+              </li>
+            </ul>
           </MDBCol>
-          <MDBCol md="4">
+          <MDBCol md="4" className=" text-center">
             <h5 className="title font-weight-bold">
               Africa International Documentary Festival
             </h5>
             <p>
               AFIDF will set the standard and be the recognized leader in
-              African Diapora documentary informaation management pratice,
+              African Diaspora documentary information management practice,
               education, certification, research, and advocacy.
             </p>
             <ul className="list-unstyled list-inline text-center ">
@@ -65,9 +68,11 @@ const Footer = () => {
               </li>
             </ul>
           </MDBCol>
-          <MDBCol md="4">
-            <h6 className="text-uppercase font-weight-bold">Contact</h6>
-            <hr style={{ height: 2, width: 40, backgroundColor: "#fff" }} />
+          <MDBCol md="4" className="text-center">
+            <h6 className="text-uppercase  font-weight-bold text-center ">
+              Contact
+              <hr style={{ height: 2, width: 40, backgroundColor: "#fff" }} />
+            </h6>
 
             <p>
               <i className="fas fa-home mr-3"></i> North Hills, CA 91343, US
@@ -86,7 +91,7 @@ const Footer = () => {
         style={{ backgroundColor: "#1C2331" }}
       >
         <MDBContainer color="unique-color-dark" fluid>
-          &copy; {new Date().getFullYear()} Copyright: Benefo & Kyei
+          &copy; {new Date().getFullYear()} Copyright: AFIDF
         </MDBContainer>
       </div>
     </MDBFooter>

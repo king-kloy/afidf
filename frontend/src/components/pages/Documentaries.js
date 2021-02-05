@@ -1,6 +1,6 @@
 import React from "react";
 import Smiling_Ladies from "../images/Smiling_Ladies.png";
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import "./css/Documentaries.css";
 
 class Documentaries extends React.Component {
@@ -17,7 +17,7 @@ class Documentaries extends React.Component {
           </MDBRow>
           <MDBRow className="d-flex justify-content-center">
             <h2 className="h1-responsive font-weight-bold text-center my-5 pt-5">
-              African Diaspora Renaissance Creative Documentaries
+              Introduction
               <hr style={{ height: 5, width: 40, backgroundColor: "#000" }} />
             </h2>
           </MDBRow>
@@ -60,14 +60,11 @@ class Documentaries extends React.Component {
         </MDBContainer>
         <MDBContainer fluid className="focus mt-5">
           <MDBRow>
-            <h3
-              className="font-weight-bold text-white main d-flex justify-content-center"
-              style={{ marginLeft: 80 }}
-            >
+            <h3 className="font-weight-bold text-white main d-flex justify-content-center">
               AFIDF &nbsp;<p className="special mb-0">focal point</p>
             </h3>
           </MDBRow>
-          <MDBRow>
+          <MDBRow className="mt-3">
             <MDBCol md="6" className="lead text-white p-3">
               AFIDF focuses on talent, new media and African Diaspora cultural
               diversity. These focal points are implemented over the entire
@@ -82,12 +79,12 @@ class Documentaries extends React.Component {
             </MDBCol>
             <MDBCol md="6">
               <h5
-                className="font-weight-bold d-flex justify-content-center"
+                className="font-weight-bold mt-3"
                 style={{ color: "#ffb302" }}
               >
                 FOCUS PROGRAMS
               </h5>
-              <p className="lead text-white p-3">
+              <p className="lead text-white ">
                 Explore the AFIDF 2020 focus programs Me, Space, and Serialized.
                 The year 2020 AFIDF introduces the thematic focus programs, Me,
                 Space, and Serialized. Whether examining personal histories of
@@ -99,14 +96,11 @@ class Documentaries extends React.Component {
             </MDBCol>
           </MDBRow>
           <MDBRow>
-            <MDBCol md="6" className="mt-3">
-              <h5
-                className="font-weight-bold d-flex justify-content-center"
-                style={{ color: "#ffb302" }}
-              >
+            <MDBCol md="6" className="mt-3 p-3">
+              <h5 className="font-weight-bold " style={{ color: "#ffb302" }}>
                 ME 25 ITEMS
               </h5>
-              <p className="lead text-white p-3">
+              <p className="lead text-white">
                 AFIDF presents a main focus program, Me, about the personal and
                 autobiographical documentary film. Me is a selection of
                 different cinematic expressions by filmmakers whose study of
@@ -119,10 +113,10 @@ class Documentaries extends React.Component {
               </p>
             </MDBCol>
             <MDBCol md="6">
-              <MDBRow>
+              <MDBRow className="pt-0">
                 <h5
-                  className="font-weight-bold"
-                  style={{ color: "#ffb302", marginLeft: 240 }}
+                  className="font-weight-bold ml-5"
+                  style={{ color: "#ffb302" }}
                 >
                   SPACE 10 ITEMS
                 </h5>
@@ -137,8 +131,8 @@ class Documentaries extends React.Component {
               </MDBRow>
               <MDBRow>
                 <h5
-                  className="font-weight-bold d-flex justify-content-center"
-                  style={{ color: "#ffb302", marginLeft: 200 }}
+                  className="font-weight-bold text-center ml-5"
+                  style={{ color: "#ffb302" }}
                 >
                   SERIALIZED 5 ITEMS
                 </h5>

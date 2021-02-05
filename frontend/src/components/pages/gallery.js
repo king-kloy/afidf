@@ -15,7 +15,7 @@ class gallery extends Component {
   render() {
     return (
       <div className="gallery">
-        <div class="container">
+        <div class="container mb-5">
           <MDBRow className="d-flex justify-content-center">
             <h3
               className="display-6 mt-3 mb-3 font-weight-bold text-center"
@@ -72,7 +72,7 @@ class gallery extends Component {
                     className="img-fluid z-depth-1 rounded"
                     src={Multipics}
                     alt="africa.png"
-                    style={{ height: 63, width: 400 }}
+                    style={{ height: 63, width: 400, objectFit: "cover" }}
                   />
                   <a href="#!">
                     <MDBMask overlay="white-slight" />

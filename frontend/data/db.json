@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "title": "Eum nihil dolorum non placeat ab i did it yaw.",
+      "body": "<p>wqkrfjkeldj etgljkrfdljf[grik[o</p>",
+      "category": "Technology",
+      "createdAt": "Mon Feb 01 2021 13:33:22 GMT+0000 (Greenwich Mean Time)",
+      "id": 3
+    },
+    {
+      "title": "Free AI Training",
+      "body": "<p>doet iert dfeeo toetj erdfd eretie etldjjf ewrfekgd srjfdjg f;dg;k</p>",
+      "category": "Technology",
+      "createdAt": "Mon Feb 01 2021 13:56:17 GMT+0000 (Greenwich Mean Time)",
+      "id": 4
+    },
+    {
+      "title": "Blog 23",
+      "body": "<p>erfgl wrjepojrp wjrfjdljfkj kwjrkfljksfkcn fkliwhroieh nrihwiorhflij</p>",
+      "category": "Technology",
+      "createdAt": "Mon Feb 01 2021 13:57:57 GMT+0000 (Greenwich Mean Time)",
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology"
+    },
+    {
+      "id": 2,
+      "name": "Health"
+    },
+    {
+      "id": 3,
+      "name": "Agriculture"
+    }
+  ]
+}

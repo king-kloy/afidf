@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import {
   MDBCarousel,
-  MDBCarouselCaption,
   MDBCarouselInner,
   MDBCarouselItem,
   MDBView,
   MDBMask,
-  MDBContainer
+  MDBContainer,
 } from "mdbreact";
 import "./css/home.css";
 import Mission from "./Mission";

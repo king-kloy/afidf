@@ -3,7 +3,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
 
 const ContactUS = () => {
   return (
-    <MDBContainer fluid>
+    <MDBContainer fluid className="mb-4">
       <MDBRow className="justify-content-center">
         <MDBCol md="12" lg="6">
           <form>

@@ -1,13 +1,25 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
-import  { Link } from 'react-router-dom'
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBInput,
+  MDBBtn,
+  MDBModalFooter,
+} from "mdbreact";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
-    <MDBContainer fluid className=' d-flex flex-column justify-content-center' >
+    <MDBContainer
+      fluid
+      className=" d-flex flex-column justify-content-center mb-3"
+    >
       <MDBRow className>
-        <MDBCol md="12"  className='pt-0 d-flex justify-content-center' >
-          <MDBCard className=' mt-3' style={{width: 500}}>
+        <MDBCol md="12" className="pt-0 d-flex justify-content-center">
+          <MDBCard className=" mt-3" style={{ width: 500 }}>
             <MDBCardBody className="mx-4">
               <div className="text-center">
                 <h3 className="dark-grey-text mb-5">
@@ -32,59 +44,27 @@ const SignIn = () => {
               <p className="font-small blue-text d-flex justify-content-end pb-3">
                 Forgot
                 <a href="#!" className="blue-text ml-1">
-
                   Password?
                 </a>
               </p>
               <div className="text-center mb-3">
-
-                <Link to='/dashboard'>
+                <Link to="/dashboard">
                   <MDBBtn
                     type="button"
                     gradient="sunny-morning"
                     rounded
                     className="btn-block z-depth-1a"
-                    style={{borderRadius: 30, color: '#fff',}}
+                    style={{ borderRadius: 30, color: "#fff" }}
                   >
                     Sign in
                   </MDBBtn>
                 </Link>
               </div>
-              <p className="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
-
-                or Sign in with:
-              </p>
-              <div className="row my-3 d-flex justify-content-center">
-                <MDBBtn
-                  type="button"
-                  color="white"
-                  rounded
-                  className="mr-md-3 z-depth-1a"
-                >
-                  <MDBIcon fab icon="facebook-f" className="blue-text text-center" />
-                </MDBBtn>
-                <MDBBtn
-                  type="button"
-                  color="white"
-                  rounded
-                  className="mr-md-3 z-depth-1a"
-                >
-                  <MDBIcon fab icon="twitter" className="blue-text" />
-                </MDBBtn>
-                <MDBBtn
-                  type="button"
-                  color="white"
-                  rounded
-                  className="z-depth-1a"
-                >
-                  <MDBIcon fab icon="google" className="blue-text" />
-                </MDBBtn>
-              </div>
             </MDBCardBody>
             <MDBModalFooter className="mx-5 pt-3 mb-1">
               <p className="font-small grey-text d-flex justify-content-end">
                 Not a member?
-               <Link to='/signup'>
+                <Link to="/signup">
                   <a href="/signin" className="blue-text ml-1">
                     Sign Up
                   </a>
